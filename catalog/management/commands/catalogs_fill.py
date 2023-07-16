@@ -1,7 +1,6 @@
 from django.core.management import BaseCommand
 from catalog.models import Category
 
-
 class Command(BaseCommand):
     """Класс для заполнения каталогов, catalog_product.json"""
 
