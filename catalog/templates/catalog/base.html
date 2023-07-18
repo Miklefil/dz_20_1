@@ -1,5 +1,4 @@
 {% load static %}
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,20 +10,13 @@
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
 <body>
-
 {% include 'catalog/includes/inc_catalog_menu.html' %}
-
-
 <div class="container">
     <div class="row">
-
         {% block card %}
         {% endblock %}
-
         {% include 'catalog/includes/inc_catalog_footer.html' %}
     </div>
 </div>
-
-
 </body>
 </html>
