@@ -13,14 +13,7 @@ class User(AbstractUser):
 
     token = models.CharField(max_length=200, verbose_name='токен', **NULLABLE)
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='время создания токена', **NULLABLE)
-    # token_time = models.DateTimeField(auto_now_add=True, verbose_name='время создания токена', **NULLABLE)
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
 
-
-
-#     user = models.OneToOneField(User, on_delete=models.CASCADE)
-#     token = models.CharField(max_length=200)
-#     is_verified = models.BooleanField(default=False)
-#     created_at = models.DateTimeField(auto_now_add=Tr

@@ -3,7 +3,7 @@ from users.models import User
 import os
 
 
-PASSWORD = '12345'
+PASSWORD = os.getenv('Pass_SQL')
 
 class Command(BaseCommand):
     def handle(self, *args, **options):

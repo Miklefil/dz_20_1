@@ -7,7 +7,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
 
-        Product.objects.all().delete() #object deleted товары из базы данных
+        Product.objects.all().delete()
 
         product_list = [
             {'name': '4-х поршневой суппорт JBT CB4P',

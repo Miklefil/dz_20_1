@@ -152,23 +152,3 @@ class UserPasswordResetConfirmView(SuccessMessageMixin, PasswordResetConfirmView
         context = super().get_context_data(**kwargs)
         context['title'] = 'Установить новый пароль'
         return context
-
-
-
-
-
-
-
-
-
-
-    # def form_valid(self, form):
-    #     """Отправка письма при регистрации нового пользователя"""
-    #     new_user = form.save()
-    #     send_mail(
-    #         subject='Поздравляем с регистрацией!!!',
-    #         message='Учебный проект по фреймворку Django от SkyPro. Ваша почта настроена - smtp yahoo',
-    #         from_email=settings.EMAIL_HOST_USER,
-    #         recipient_list=[new_user.email]
-    #     )
-    #     return super().form_valid(form)
